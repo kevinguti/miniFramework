@@ -36,7 +36,7 @@ export default defineConfig({
 projects: [
     {
       name: 'api-tests',
-      testMatch: 'tests/api/*/.spec.ts',
+      testMatch: 'tests/api/**/*.spec.ts',
       use: {
         baseURL: process.env.API_URL,
       },
@@ -44,7 +44,7 @@ projects: [
 
     {
       name: 'ui-tests',
-      testMatch: 'tests/ui/*/.spec.ts',
+      testMatch: 'tests/ui/**/*.spec.ts',
       use: {
         ...devices['Desktop Chrome'],
         baseURL: process.env.UI_URL,

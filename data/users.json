@@ -1,0 +1,4 @@
+{
+  "admin": { "username": "api@example.com", "password": "sylius-api" },
+  "invalid": { "username": "no_existe", "password": "xxx" }
+}
